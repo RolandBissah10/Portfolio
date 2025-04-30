@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0F172A',secondary:'#3B82F6',accent:'#60A5FA'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+</head>
+<body>
+<!-- Navigation -->
+<header class="fixed w-full z-50 bg-primary bg-opacity-95 backdrop-blur-sm">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" id="header-logo" class="text-2xl font-['Pacifico'] text-white hover:text-secondary transform hover:scale-105 transition-all duration-300 flex items-center">
+<img class="logo" src="porfolioLogo.png"></img>
+<span>roland</span>
+</a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-white hover:text-secondary transition-colors duration-300">Home</a>
+<a href="#skills" class="text-white hover:text-secondary transition-colors duration-300">Skills</a>
+<a href="#about" class="text-white hover:text-secondary transition-colors duration-300">About</a>
+<a href="#contact" class="text-white hover:text-secondary transition-colors duration-300">Contact</a>
+</div>
+<div class="md:hidden w-8 h-8 flex items-center justify-center cursor-pointer" id="mobile-menu-button">
+<i class="ri-menu-line text-white ri-2x"></i>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div class="md:hidden hidden bg-primary absolute w-full" id="mobile-menu">
+<div class="px-6 py-4 space-y-4">
+<a href="#home" class="block text-white hover:text-secondary transition-colors duration-300">Home</a>
+<a href="#skills" class="block text-white hover:text-secondary transition-colors duration-300">Skills</a>
+<a href="#about" class="block text-white hover:text-secondary transition-colors duration-300">About</a>
+<a href="#contact" class="block text-white hover:text-secondary transition-colors duration-300">Contact</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center justify-center gradient-bg pt-20">
+<div class="particles">
+<div class="particle" style="width: 20px; height: 20px; top: 10%; left: 10%;"></div>
+<div class="particle" style="width: 15px; height: 15px; top: 20%; left: 25%;"></div>
+<div class="particle" style="width: 25px; height: 25px; top: 30%; left: 60%;"></div>
+<div class="particle" style="width: 18px; height: 18px; top: 70%; left: 80%;"></div>
+<div class="particle" style="width: 22px; height: 22px; top: 80%; left: 15%;"></div>
+<div class="particle" style="width: 12px; height: 12px; top: 40%; left: 40%;"></div>
+<div class="particle" style="width: 28px; height: 28px; top: 60%; left: 30%;"></div>
+</div>
+<div class="container mx-auto px-6 z-10">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-12 md:mb-0">
+<h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I'm <span class="text-secondary">Roland Bissah</span></h1>
+<h2 class="text-2xl md:text-3xl font-medium text-white mb-6 typing-effect" id="typing-text">Full Stack Developer</h2>
+<p class="text-lg text-gray-300 mb-8 max-w-lg">Crafting digital experiences that combine beautiful design with powerful functionality. Specialized in creating responsive web applications that deliver exceptional user experiences.</p>
+<div class="flex space-x-4">
+<a href="#contact" class="border-2 border-secondary text-secondary font-medium px-6 py-3 !rounded-button whitespace-nowrap hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">Get in Touch</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="portfolio.jpg" alt="Profile Picture" class="rounded-lg shadow-2xl w-full max-w-md object-cover object-top">
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-20 gradient-bg">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-2 text-center">Skills & Expertise</h2>
+<p class="text-gray-300 mb-12 text-center max-w-2xl mx-auto">My technical toolkit and areas of specialization that I bring to every project.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Technical Skills -->
+<div>
+<h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+<div class="w-8 h-8 flex items-center justify-center mr-2 bg-secondary bg-opacity-20 rounded-full">
+<i class="ri-code-s-slash-line text-secondary"></i>
+</div>
+Technical Skills
+</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">JavaScript</span>
+<span class="text-secondary">70%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Python</span>
+<span class="text-secondary">65%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 65%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Java Spring Boot</span>
+<span class="text-secondary">60%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 60%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">HTML5 / CSS3</span>
+<span class="text-secondary">70%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">MongoDB / SQL</span>
+<span class="text-secondary">65%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 65%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Design Skills -->
+<div>
+<h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+<div class="w-8 h-8 flex items-center justify-center mr-2 bg-accent bg-opacity-20 rounded-full">
+<i class="ri-palette-line text-accent"></i>
+</div>
+Design Skills
+</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">UI/UX Design</span>
+<span class="text-accent">70%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Figma</span>
+<span class="text-accent">65%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 65%; background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Responsive Design</span>
+<span class="text-accent">70%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Wireframing & Prototyping</span>
+<span class="text-accent">65%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 65%; background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-white">Adobe Photoshop</span>
+<span class="text-accent">70%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Technology Stack -->
+<div class="mt-16">
+<h3 class="text-xl font-semibold text-white mb-8 text-center">Technology Stack</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-html5-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">HTML5</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-css3-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">CSS3</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-javascript-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">JavaScript</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-code-s-slash-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">Python</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-code-box-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">Spring Boot</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-database-2-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">MongoDB</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-git-branch-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">Git</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-cloud-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">AWS</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white bg-opacity-5 rounded-lg mb-3 hover:bg-secondary hover:bg-opacity-10 transition-all duration-300">
+<i class="ri-fire-line text-secondary ri-2x"></i>
+</div>
+<span class="text-white text-sm">Firebase</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#16213E]">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img src="portfolio.jpg" alt="Profile Picture" class="rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover object-top h-[500px]">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
+<p class="text-gray-300 mb-4">I'm Roland Bissah, a passionate Full Stack Developer with over 3 years of experience building  applications that deliver exceptional user experiences.</p>
+<p class="text-gray-300 mb-4">My journey in software development began at the Takoradi Technical University, Takoradi, where I earned my Bachelor's degree in Software Engineering. Since then, I've worked with startups and established companies alike, helping them bring their digital products to life.</p>
+<p class="text-gray-300 mb-6">When I'm not coding, you can find me watching movies or experimenting with new technologies. I believe in continuous learning and staying at the forefront of technological advancements.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div>
+<h3 class="text-secondary font-semibold mb-2">Location</h3>
+<p class="text-white">Takoradi,W/R</p>
+</div>
+<div>
+<h3 class="text-secondary font-semibold mb-2">Email</h3>
+<p class="text-white">rolandbissah10@gmail.com</p>
+</div>
+<div>
+<h3 class="text-secondary font-semibold mb-2">Experience</h3>
+<p class="text-white">3+ Years</p>
+</div>
+<div>
+<h3 class="text-secondary font-semibold mb-2">Availability</h3>
+<p class="text-white">Freelance</p>
+</div>
+</div>
+<div class="flex space-x-4">
+<a href="https://github.com/RolandBissah10" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="https://www.linkedin.com/in/roland-bissah-5b40b628b" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<a href="https:/wa.me/+233261084604" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-whatsapp-fill text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 gradient-bg">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-2 text-center">Get In Touch</h2>
+<p class="text-gray-300 mb-12 text-center max-w-2xl mx-auto">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Contact Form -->
+<div class="md:w-1/2 bg-primary bg-opacity-50 p-8 rounded-lg shadow-xl">
+<form id="contact-form">
+<div class="mb-6 relative">
+<input type="text" id="name" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<label for="name" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Name</label>
+</div>
+<div class="mb-6 relative">
+<input type="email" id="email" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<label for="email" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Email</label>
+</div>
+<div class="mb-6 relative">
+<input type="text" id="subject" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<label for="subject" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Subject</label>
+</div>
+<div class="mb-6 relative">
+<textarea id="message" rows="4" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required></textarea>
+<label for="message" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Message</label>
+</div>
+<div class="mb-6 flex items-center">
+<div class="custom-checkbox" id="agreement-checkbox"></div>
+<label for="agreement-checkbox" class="ml-3 text-gray-300 text-sm cursor-pointer">I agree to the privacy policy and terms of service</label>
+</div>
+<button type="submit" class="w-full bg-secondary text-primary font-medium py-3 !rounded-button whitespace-nowrap hover:bg-opacity-80 transition-all duration-300">Send Message</button>
+</form>
+</div>
+<!-- Contact Info -->
+<div class="md:w-1/2">
+<div class="mb-10">
+<h3 class="text-xl font-semibold text-white mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary bg-opacity-20 rounded-full mr-4">
+<i class="ri-map-pin-line text-secondary"></i>
+</div>
+<div>
+<h4 class="text-white font-medium mb-1">Location</h4>
+<p class="text-gray-300">HC Armstrong Street, Sekondi<br>Takoradi, W/R</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary bg-opacity-20 rounded-full mr-4">
+<i class="ri-mail-line text-secondary"></i>
+</div>
+<div>
+<h4 class="text-white font-medium mb-1">Email</h4>
+<p class="text-gray-300">rolandbissah10@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary bg-opacity-20 rounded-full mr-4">
+<i class="ri-phone-line text-secondary"></i>
+</div>
+<div>
+<h4 class="text-white font-medium mb-1">Phone</h4>
+<p class="text-gray-300">+233 25 672 8245<br>+233 26 108 4604</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map -->
+<div class="rounded-lg overflow-hidden h-64 relative">
+<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Location Map" class="absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-primary bg-opacity-20 flex items-center justify-center">
+<div class="bg-primary bg-opacity-80 px-4 py-2 rounded-full text-white flex items-center">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Takoradi, W/R</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-12 bg-primary">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8">
+<a href="#" id="footer-logo" class="text-2xl font-['Pacifico'] text-white mb-6 md:mb-0 hover:text-secondary transform hover:scale-105 transition-all duration-300 flex items-center">
+<img class="logo" src="porfolioLogo.png"></img>
+<span>roland</span>
+</a>
+<div class="flex space-x-6">
+<a href="https://github.com/RolandBissah10" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-github-fill text-white"></i>
+</a>
+<a href="https://www.linkedin.com/in/roland-bissah-5b40b628b" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<a href="https://wa.me/+233261084604" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-secondary hover:bg-opacity-20 transition-all duration-300">
+<i class="ri-whatsapp-fill text-white"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Roland Bissah. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 text-sm hover:text-secondary transition-colors duration-300">Privacy Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-secondary transition-colors duration-300">Terms of Service</a>
+<a href="#" class="text-gray-400 text-sm hover:text-secondary transition-colors duration-300">Sitemap</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Back to Top Button -->
+<div class="fixed bottom-6 right-6 w-12 h-12 bg-secondary rounded-full flex items-center justify-center cursor-pointer opacity-0 transition-opacity duration-300" id="back-to-top">
+<i class="ri-arrow-up-line text-primary ri-lg"></i>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
