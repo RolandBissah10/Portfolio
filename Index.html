@@ -56,7 +56,7 @@
 <div class="container mx-auto px-6 z-10">
 <div class="flex flex-col md:flex-row items-center">
 <div class="md:w-1/2 mb-12 md:mb-0">
-<h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I'm <span class="text-secondary">Roland Bissah</span></h1>
+<h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I am <span class="text-secondary">Roland Bissah</span></h1>
 <h2 class="text-2xl md:text-3xl font-medium text-white mb-6 typing-effect" id="typing-text">Full Stack Developer</h2>
 <p class="text-lg text-gray-300 mb-8 max-w-lg">Crafting digital experiences that combine beautiful design with powerful functionality. Specialized in creating responsive web applications that deliver exceptional user experiences.</p>
 <div class="flex space-x-4">
@@ -259,9 +259,9 @@ Design Skills
 </div>
 <div class="md:w-1/2">
 <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
-<p class="text-gray-300 mb-4">I'm Roland Bissah, a passionate Full Stack Developer with over 3 years of experience building  applications that deliver exceptional user experiences.</p>
-<p class="text-gray-300 mb-4">My journey in software development began at the Takoradi Technical University, Takoradi, where I earned my Bachelor's degree in Software Engineering. Since then, I've worked with startups and established companies alike, helping them bring their digital products to life.</p>
-<p class="text-gray-300 mb-6">When I'm not coding, you can find me watching movies or experimenting with new technologies. I believe in continuous learning and staying at the forefront of technological advancements.</p>
+<p class="text-gray-300 mb-4">I am Roland Bissah, a passionate Full Stack Developer with over 3 years of experience building  applications that deliver exceptional user experiences.</p>
+<p class="text-gray-300 mb-4">My journey in software development began at the Takoradi Technical University, Takoradi, where I earned my Bachelor's degree in Software Engineering. Since then, I have worked with startups and established companies alike, helping them bring their digital products to life.</p>
+<p class="text-gray-300 mb-6">When I am not coding, you can find me experimenting with new technologies or watching movies. I believe in continuous learning and staying at the forefront of technological advancements.</p>
 <div class="grid grid-cols-2 gap-4 mb-8">
 <div>
 <h3 class="text-secondary font-semibold mb-2">Location</h3>
@@ -303,21 +303,21 @@ Design Skills
 <div class="flex flex-col md:flex-row gap-12">
 <!-- Contact Form -->
 <div class="md:w-1/2 bg-primary bg-opacity-50 p-8 rounded-lg shadow-xl">
-<form id="contact-form">
+<form id="contact-form" method="POST" action="https://formspree.io/f/mpwdpaqo" class="space-y-6">
 <div class="mb-6 relative">
-<input type="text" id="name" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<input type="text" id="name" name="name" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
 <label for="name" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Name</label>
 </div>
 <div class="mb-6 relative">
-<input type="email" id="email" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<input type="email" id="email" name="email" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
 <label for="email" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Email</label>
 </div>
 <div class="mb-6 relative">
-<input type="text" id="subject" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
+<input type="text" id="subject" name="subject" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required>
 <label for="subject" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Subject</label>
 </div>
 <div class="mb-6 relative">
-<textarea id="message" rows="4" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required></textarea>
+<textarea id="message" rows="4" name="message" class="w-full bg-transparent border-b-2 border-gray-600 focus:border-secondary py-3 px-4 text-white outline-none transition-all duration-300" placeholder=" " required></textarea>
 <label for="message" class="absolute left-4 top-3 text-gray-400 transition-all duration-300">Your Message</label>
 </div>
 <div class="mb-6 flex items-center">
